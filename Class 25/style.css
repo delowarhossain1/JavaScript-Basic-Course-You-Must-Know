@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 400px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+}
+
+form select{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+form button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(179, 159, 159);
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+}
