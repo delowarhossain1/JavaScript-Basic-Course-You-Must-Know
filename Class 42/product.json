@@ -1,0 +1,15 @@
+[
+    {
+        "productName" : "name.....",
+        "url" : "https.....",
+        "price" : 100,
+        "isPopular" : true
+
+    },
+    {
+        "productName" : "name.....",
+        "url" : "https.....",
+        "price" : 100,
+        "isPopular" : true
+    }
+]

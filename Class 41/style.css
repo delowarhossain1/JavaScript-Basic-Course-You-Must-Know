@@ -1,0 +1,16 @@
+*{
+    font-family: sans-serif;
+}
+
+.product {
+    width: 200px;
+    padding: 4px;
+    background-color: #ddd;
+}
+.product > img{
+    max-width: 100%;
+}
+#root{
+    margin-top: 20px;
+    display: flex;
+}
