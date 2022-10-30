@@ -1,18 +1,20 @@
-/*
-    String Methods
-    1. toUpperCase()
-    2. toLocaleLowerCase()
-    3. includes();
-    4. slice
-*/ 
+const numbers = [20, 30, 40, 50];
 
-const productTitle = 'White T-shirt / Cotton Round Neck T-Shirt for Men / Half sleeve T-Shirt F';
 
-// console.log(productTitle.toUpperCase());
-// console.log(productTitle.toLocaleLowerCase());
+// for(let i = 0; i < numbers.length; i++){
+//     console.log(numbers[i]);
+// }
 
-const pTitleLow = productTitle.toLocaleLowerCase();
-const search = 't-shirt';
-// console.log(pTitleLow.includes(search));
+const method1 = numbers.forEach((value, index, arr)=> {
+    return value + 5;
+});
 
-console.log(productTitle.slice(0, 50) + '....');
+console.log(method1)
+
+const method2 = numbers.map((value, index, arr)=>{
+    return value + 5;
+    
+})
+
+console.log(method2)
+

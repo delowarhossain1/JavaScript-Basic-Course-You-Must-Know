@@ -13,11 +13,13 @@
         <form action="" id="form">
             <h2>Add New Product</h2>
 
-            <input type="text" placeholder="Product title">
-            <input type="text" placeholder="Product URL">
-            <input type="text" placeholder="Product details URL">
+            <input type="text" placeholder="Product title" name="title" required>
 
-            <textarea name="" id="" placeholder="product description"></textarea>
+            <input type="text" placeholder="Product URL" name="productURL">
+
+            <input type="text" placeholder="Product details URL" name="productDetailsURL">
+
+            <textarea name="des" id="" placeholder="product description"></textarea>
 
             <button>Add Product</button>
         </form>
@@ -26,21 +28,8 @@
     <h2 class="section-heading">Our products</h2>
 
 
-    <div id="root">
+    <div id="root"></div>
 
-        <div class="product">
-            <img src="https://static-01.daraz.com.bd/p/9e9267b05a5eff897b9a4b5ce53bd710.jpg" alt="">
-
-            <h3>Simple product</h3>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam est, ratione doloribus suscipit eveniet magnam facilis quod! Rerum, autem.</p>
-
-            <a href="https://www.youtube.com/" target="_blank">
-                <button>Details</button>
-            </a>
-        </div>
-
-    </div>
 
 
     <script src="index.js"></script>

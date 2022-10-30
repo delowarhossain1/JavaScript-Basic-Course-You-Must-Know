@@ -1,29 +1,18 @@
-const obj = {
+/*
+    String Methods
+    1. toUpperCase()
+    2. toLocaleLowerCase()
+    3. includes();
+    4. slice
+*/ 
 
-    person : {
-        name : "Raju",
-        address : "Dhaka",
-        mobile : '0101010101'
-    }
-}
+const productTitle = 'White T-shirt / Cotton Round Neck T-Shirt for Men / Half sleeve T-Shirt F';
 
-const arr = [
-    function add(a, b){
-        return a + b;
-    }
-]
+// console.log(productTitle.toUpperCase());
+// console.log(productTitle.toLocaleLowerCase());
 
+const pTitleLow = productTitle.toLocaleLowerCase();
+const search = 't-shirt';
+// console.log(pTitleLow.includes(search));
 
-const func = ({person}) =>{
-    const {name, address, mobile} = person;
-
-}
-
-func(obj);
-
-function func2([addFun]){
-
-    console.log(addFun(10, 5))
-}
-
-func2(arr)
+console.log(productTitle.slice(0, 50) + '....');

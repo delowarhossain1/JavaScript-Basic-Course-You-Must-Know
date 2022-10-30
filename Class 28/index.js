@@ -1,15 +1,17 @@
-var date = new Date();
+var seconds = document.getElementById('seconds');
+var minutes = document.getElementById('minutes');
+var hours = document.getElementById('hours');
 
-console.log(date.getMilliseconds());
-console.log(date.getSeconds());
-console.log(date.getMinutes());
-console.log(date.getHours());
-console.log(date.getDate());
 
-console.log(date.toString())
-console.log(date.toDateString())
-console.log(date.toLocaleDateString())
-console.log(date.toTimeString());
-console.log(date.toLocaleTimeString());
-console.log(date.toLocaleString());
-console.log(date.getFullYear())
+setInterval(function () {
+
+    var date = new Date();
+    var s = date.getSeconds();
+    var m = date.getMinutes();
+    var h = date.getHours();
+
+    seconds.innerText = s;
+    minutes.innerText = m;
+    hours.innerText = h;
+
+}, 1000);

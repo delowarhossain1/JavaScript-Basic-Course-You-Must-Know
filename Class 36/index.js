@@ -1,24 +1,29 @@
 const obj = {
-    name : 'Raju',
-    roll : 10,
-    sub : ['Bangla', "English", "Math"],
+
+    person : {
+        name : "Raju",
+        address : "Dhaka",
+        mobile : '0101010101'
+    }
+}
+
+const arr = [
+    function add(a, b){
+        return a + b;
+    }
+]
+
+
+const func = ({person}) =>{
+    const {name, address, mobile} = person;
 
 }
 
-// console.log(obj.name);
-// console.log(obj.roll);
-// console.log(obj.sub);
+func(obj);
 
-const {name, sub} = obj;
+function func2([addFun]){
 
-console.log(name)
-console.log(sub);
+    console.log(addFun(10, 5))
+}
 
-
-const arr = ["Bangla", "English", "Math", "Physic"];
-
-const [,eng,, ph] = arr;
-
-console.log(eng);
-console.log(ph)
-
+func2(arr)

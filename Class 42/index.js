@@ -1,27 +1,32 @@
-const product = [
-    {
-        productName : 'name......',
-        url : 'https......',
-        des : 'hello dis......'
+fetch('product.json')
+    .then(res => res.json())
+    .then(res => {
 
-    },
-    {
-        productName : 'name......',
-        url : 'https......',
-        des : 'hello dis......'
-    },
-    {
-        productName : 'name......',
-        url : 'https......',
-        des : 'hello dis......'
-    },
-]
+        productCard(res)
+    });
 
-const jsonData  = JSON.stringify(product);
 
-console.log(JSON.parse(jsonData));
+function productCard(productInfo) {
+    const root = document.getElementById('root');
 
-// console.log(product[0])
+    productInfo.forEach(value => {
+        
+        root.innerHTML += htmlCode(value);
+    });
 
-JSON.stringify();
-JSON.parse();
+
+    function htmlCode(info) {
+        const {imageURL, productName, price} = info;
+
+        const html = `
+            <div>
+                <img src='${imageURL}' />
+                <h3>${price}</h3>
+                <h2>${productName} </h2>
+
+            </div>
+        `;
+
+        return html;
+    }
+}

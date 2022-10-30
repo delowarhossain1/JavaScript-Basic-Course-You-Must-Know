@@ -1,17 +1,17 @@
-var seconds = document.getElementById('seconds');
-var minutes = document.getElementById('minutes');
-var hours = document.getElementById('hours');
+var url = 'https://static-01.daraz.com.bd/p/5befd51060f56e996b17204153f79e41.jpg';
+
+var title = 'Simple product';
+
+var des = ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, eos.';
 
 
-setInterval(function () {
+var product = `
+    <div class='product'>
+        <img src='${url}' />
+        
+        <h2>${title}</h2>
+        <p>${des}</p>
+    </div>
+`;
 
-    var date = new Date();
-    var s = date.getSeconds();
-    var m = date.getMinutes();
-    var h = date.getHours();
-
-    seconds.innerText = s;
-    minutes.innerText = m;
-    hours.innerText = h;
-
-}, 1000);
+document.getElementById('root').innerHTML = product;

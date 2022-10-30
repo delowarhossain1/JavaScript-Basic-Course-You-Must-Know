@@ -44,6 +44,7 @@ body{
     width: 250px;
     padding: 10px;
     background-color: #ddd;
+    margin-right: 10px;
 }
 
 .product img{
@@ -57,4 +58,8 @@ body{
     background-color: rgb(176, 154, 154);
     border: none;
     font-size: 18px;
+}
+
+#root{
+    display: flex;
 }
